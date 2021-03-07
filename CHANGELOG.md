@@ -2,6 +2,18 @@
 
 This file is used to list changes made in each version of the iptables cookbook.
 
+## Unreleased
+
+- Refactor cookbook [@bmhughes](https://github.com/bmhughes)
+  - Remove legacy code
+  - Refactor chain and rule resources
+    - Complex logic moved to helper libraries
+  - Refactor service resource
+    - Add the full set of service actions
+    - Create a default configuration to ensure starting on Redhat platform families
+  - Refactor package resource
+    - Add the full set of package actions
+
 ## 7.1.0 (2020-06-09)
 
 - Resolved cookstyle error: recipes/default.rb:19:14 warning: `Lint/SendWithMixinArgument`
